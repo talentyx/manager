@@ -12,6 +12,15 @@ The images are on the NeuVector Docker Hub registry. Use the appropriate version
 
 Note: Deploying from the Rancher Manager 2.6.5+ NeuVector chart pulls from the rancher-mirrored repo and deploys into the cattle-neuvector-system namespace.
 
+# Build
+
+```shell
+# prebuild
+make jar
+# build docker images
+make manager_image
+```
+
 # Bugs & Issues
 Please submit bugs and issues to [neuvector/neuvector](//github.com/neuvector/neuvector/issues) with a title starting with `[UI] `.
 
