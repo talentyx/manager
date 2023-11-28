@@ -173,20 +173,20 @@
           {{ 'enum.MY_PROFILE' | translate }}
         </button>
       </div>
-      <button
+      <!-- <button
         *ngIf="!isOnRemoteCluster && isAllowedToOperateMultiCluster"
         mat-menu-item
         (click)="goMultiCluster()">
         <i class="eos-icons icon-18 margin-right-s">organisms</i>
         {{ 'enum.MULTI_CLUSTER' | translate }}
-      </button>
-      <button
+      </button> -->
+      <!-- <button
         mat-menu-item
         (click)="goFederatedPolicy()"
         *appDisplayControl="'multi_cluster'">
         <i class="eos-icons icon-18 margin-right-s">policy</i>
         {{ 'enum.FED_POLICY' | translate }}
-      </button>
+      </button> -->
       <button *ngIf="!isSUSESSO" mat-menu-item (click)="logout()">
         <i class="eos-icons icon-18 margin-right-s">logout</i>
         {{ 'enum.LOGOUT' | translate }}
