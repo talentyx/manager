@@ -155,7 +155,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     } else {
       this.getAuthServer();
       this.verifyAuth();
-      this.verifyEula();
+      // this.verifyEula();
     }
   }
 
@@ -346,13 +346,13 @@ export class LoginComponent implements OnInit, OnDestroy {
         if (eula && eula.accepted) {
           this.isEulaAccepted = true;
         } else {
-          this.isEulaAccepted = false;
+          this.isEulaAccepted = true;
         }
         this.validEula = this.isEulaAccepted;
       },
       error => {
         this.cookieService.delete('temp');
-        this.isEulaAccepted = false;
+        this.isEulaAccepted = true;
         this.validEula = this.isEulaAccepted;
         this.notificationService.openError(
           error.error,
