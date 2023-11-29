@@ -100,7 +100,8 @@ export class AppComponent implements OnInit {
             userInfo.token.global_permissions;
           GlobalVariable.user.domain_permissions =
             userInfo.token.domain_permissions;
-          this.translatorService.useLanguage(GlobalVariable.user.token.locale);
+          // this.translatorService.useLanguage(GlobalVariable.user.token.locale);
+          this.translatorService.useLanguage("zh_cn");
           this.sessionStorage.set(
             GlobalConstant.SESSION_STORAGE_TOKEN,
             GlobalVariable.user
