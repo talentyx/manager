@@ -8,8 +8,8 @@ export class SwitchersService {
 
   constructor() {
     this.app = {
-      name: 'Container Security',
-      description: 'CS Console',
+      name: 'UranusCS',
+      description: 'Uranus Container Security',
       year: new Date().getFullYear(),
     };
 
