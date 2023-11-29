@@ -7,9 +7,9 @@
     "FAILED_TO_ADD": "Fail to add",
     "FAILED_TO_UPDATE": "Fail to update",
     "FAILED_TO_DELETE": "Fail to delete",
-    "WEB_URL": "http://www.neuvector.com",
-    "PROVIDER": "NeuVector",
-    "DOCUMENT_URL": "https://open-docs.neuvector.com",
+    "WEB_URL": "http://www.uranuscs.com",
+    "PROVIDER": "UranusCS",
+    "DOCUMENT_URL": "https://docs.uranuscs.com",
     "LOGO_NAME": "LOGO",
     "REQUIRED": "This item is required!",
     "REQUIRED_SHORT": "Required",
@@ -200,7 +200,7 @@
   },
   "logout": {
     "SIGN_OUT": "Signed out already",
-    "SIGN_OUT_DESC": "You can close this browser window and go to Rancher."
+    "SIGN_OUT_DESC": "You can close this browser window"
   },
   "login": {
     "SIGN_IN": "Sign in",
@@ -217,13 +217,13 @@
     "AUTH_ERROR": "Authentication failed!",
     "SESSION_TIMEOUT": "Session has expired. Please login.",
     "CHANGE_DEFAULT_PASSWORD": "You should change the default password!",
-    "CHANGE_DEFAULT_PASSWORD_RANCHER": "NeuVector default admin user's password should be changed!",
+    "CHANGE_DEFAULT_PASSWORD_RANCHER": "UranusCS default admin user's password should be changed!",
     "CHANGE_EXPIRING_PASSWORD": "You should change password, as it is expiring within {{expiring_Days}} day(s)!",
     "CHANGE_EXPIRING_PASSWORD_NOW": "You should change password immediately, as it is expiring today!",
     "UNSUPPORTED_ROLE": "This user account is only for CI integration.",
     "VERSION_MISMATCHED": "Manager, Controller, Enforcer are running different versions.",
     "CVE_DB_OLD": "CVE Database has not been updated for {{day}} days",
-    "UPGRADE_AVAILABLE": "NeuVector is running {{currentVersion}} and can be upgraded to {{newVersion}}"
+    "UPGRADE_AVAILABLE": "UranusCS is running {{currentVersion}} and can be upgraded to {{newVersion}}"
   },
   "dashboard": {
     "WELCOME": "Welcome to {{appName}}",
@@ -450,7 +450,7 @@
         "CLUSTERROLEBINDING_ERRORS": "Cluster Role Binding",
         "ROLEBINDING_ERRORS": "Role Binding",
         "ROLE_ERRORS": "Role",
-        "NEUVECTOR_CRD_ERRORS": "Neuvector CRD"
+        "NEUVECTOR_CRD_ERRORS": "UranusCS CRD"
       }
     },
     "help": {
@@ -467,12 +467,12 @@
         "txt2": "How to Use It: Review containers with security events to see if there are following phenomena:",
         "txt2_1": "1. The container has been exploited to start generating attacks (lateral, east-west movement). If yes, you need to fix them.",
         "txt2_2": "2. The containers generating violations to see if they have been compromised and are being used to expand laterally or attempt egress. If connections should be allowed, add a whitelist rule for them.",
-        "txt2_3": "3. Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by NeuVector.",
+        "txt2_3": "3. Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by UranusCS.",
         "txt3": "Top security events by Destination shows the containers or pods with the most network security events hitting that container. Security events are including network based detection of suspicious payloads or connections such as DDoS or sql injection etc, pods or containers with the most unauthorized connections to them (destination), egress connections out of the cluster which are suspicious are shown as external violations, suspicious process or file system incidents.",
         "txt4": "How to Use It: Review containers with security events to see if there are following phenomena:",
         "txt4_1": "1. The container has been under attack and if the attack has succeeded or damaged the container. If yes, you need to fix them.",
         "txt4_2": "2. Top destinations to determine if unauthorized connections are attempted attacks, especially if originating from one client container or from external (ingress). If connection should be allowed, add a whitelist rule for it.",
-        "txt4_3": "3. Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by NeuVector."
+        "txt4_3": "3. Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by UranusCS."
       },
       "top_thread": {
         "txt1": "Top threats by Source shows the containers or pods with the most network Threats originating from that container.. Threats are network based detection of suspicious payloads or connections such as DDoS, sql injection etc.",
@@ -488,7 +488,7 @@
       },
       "top_incident_pod": {
         "txt1": "Top incidents by pods shows suspicious process or file system incidents sorted by most incidents by pods.",
-        "txt2": "How to Use It: Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by NeuVector."
+        "txt2": "How to Use It: Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by UranusCS."
       },
       "top_incident_node": {
         "txt1": "Top incidents by nodes shows the worker nodes (hosts) with the highest number of file system or process violations.",
@@ -983,7 +983,7 @@
   },
   "containers": {
     "report": {
-      "header": "NeuVector Container Security Report",
+      "header": "Uranus Container Security Report",
       "footer": "Container Security Report",
       "download": "Generate Quarantine Report",
       "title": "Quarantine Report",
@@ -1553,7 +1553,7 @@
       "DETAILS": "Details",
       "ACTION": "Action",
       "DATETIME": "Datetime",
-      "HEADER": "NeuVector Container Security Report",
+      "HEADER": "Uranus Container Security Report",
       "FOOTER": "Container Security Report",
       "TYPEDIST": "Event Type Distribution"
     }
@@ -1827,7 +1827,7 @@
       "ONEMONTH": "A month from now",
       "ONEYEAR": "A year from now",
       "HOURS": "Custom",
-      "WARNING": "NeuVector strongly recommends that you set an expiration date for your token to help keep your information secure.",
+      "WARNING": "UranusCS strongly recommends that you set an expiration date for your token to help keep your information secure.",
       "time": {
         "YEARS": "Years",
         "MONTHS": "Months",
@@ -2070,7 +2070,7 @@
     "HAS_RULES_WARNING": "Network rules or/and Response rules that use the group will be deleted too.",
     "ADD_ITEM_TITLE": "ADD GROUP",
     "ADD_PROFILE_RULE_WARNING": "Please add a group before create a rule!",
-    "CRITERIA_HINT": "Sample: container=myServer, namespace!=default, node=ubuntu*, image=*nginx*, address=216.58.194.0/24, address=0.0.0.0/0, address=0.0.0.0-255.255.255.255, address=*.neuvector.com, container~k8s_zoo[12] or key=value for label (\"=\" exactly match, \"!\" not, \"? and *\" wildcards, \"~\" regex)",
+    "CRITERIA_HINT": "Sample: container=myServer, namespace!=default, node=ubuntu*, image=*nginx*, address=216.58.194.0/24, address=0.0.0.0/0, address=0.0.0.0-255.255.255.255, address=*.uranuscs.com, container~k8s_zoo[12] or key=value for label (\"=\" exactly match, \"!\" not, \"? and *\" wildcards, \"~\" regex)",
     "BAD_FORMAT": "Criteria in wrong format.",
     "VIEW_GROUP": "VIEW GROUP",
     "REMOVE_CONFIRM": "Will you remove this group ?",
@@ -2604,10 +2604,10 @@
       "ENABLE_CONFIRM_DEFAULT": "Enabling this default rule will allow deployment in {{namespace}} namespace",
       "PROTECT_CONFIRM": "Will you switch to 'Protect Mode'?",
       "UNSUPPORTED": "Unsupported operation because it is not Kubernetes platform.",
-      "CONFIG_K8S_FAIL": "Failed to configure Admission Control on Kubernetes system. Please make sure the \"cluster role\" and \"cluster role binding\" for neuvector:default are configured correctly.",
-      "CLUSTER_ROLE_NOT_CONFIG": "The neuvector-binding-admission clusterrole/clusterrolebinding required for Neuvector Admission Control is not configured correctly.",
-      "WEBHOOK_NOT_CONFIG": "The neuvector-svc-admission-webhook service required for Neuvector Admission Control is not configured correctly.",
-      "NO_UPD_PROMISSION": "NeuVector default service account doesn't have UPDATE permission for service resource.",
+      "CONFIG_K8S_FAIL": "Failed to configure Admission Control on Kubernetes system. Please make sure the \"cluster role\" and \"cluster role binding\" for uranuscs:default are configured correctly.",
+      "CLUSTER_ROLE_NOT_CONFIG": "The uranuscs-binding-admission clusterrole/clusterrolebinding required for UranusCS Admission Control is not configured correctly.",
+      "WEBHOOK_NOT_CONFIG": "The uranuscs-svc-admission-webhook service required for UranusCS Admission Control is not configured correctly.",
+      "NO_UPD_PROMISSION": "UranusCS default service account doesn't have UPDATE permission for service resource.",
       "ERR_SRV2WEBHOOK": "Failed to receive a request from Kube-apiserver. Please try different client mode",
       "TEST_K8S_OK": "Kubernetes system connection is normal.",
       "SAVE_CLIENT_MODE": "Submit the chosen mode to Kubernetes configuration in order to test the Kubernetes request connection.",
@@ -2876,8 +2876,8 @@
     "server": {
       "ID": "License Request ID",
       "PRE_DESC": "To request a license, please contact ",
-      "APPLY_DESC": "Enter code received from NeuVector support",
-      "EMAIL": "support@neuvector.com",
+      "APPLY_DESC": "Enter code received from UranusCS support",
+      "EMAIL": "support@uranuscs.com",
       "POST_DESC": ", we will contact you with your License Code."
     },
     "register": {
@@ -2941,12 +2941,12 @@
     "EXPORT": "Export",
     "IMPORT": "Import",
     "CLOUD_BILLING": "{{cloud}} Marketplace Support",
-    "CLOUD_BILLING_HINT_1": "If you have subscribed to NeuVector by SUSE support through the {{cloud}} Marketplace (i.e. integrated billing through your {{cloud}} account), please download this special support file. You will need to upload it to your SUSE SCC account at ",
-    "CLOUD_SUPPORT_LINK": "https://scc.suse.com/cloudsupport",
+    "CLOUD_BILLING_HINT_1": "If you have subscribed to UranusCS support through the {{cloud}} Marketplace (i.e. integrated billing through your {{cloud}} account), please download this special support file. You will need to upload it to your account at ",
+    "CLOUD_SUPPORT_LINK": "https://uranuscs.com/cloudsupport",
     "CLOUD_BILLING_HINT_2": " in order to create a support case.",
     "DOWNLOAD_SUPPORT_FILE": "Download Support File",
     "CSP_ERR_TITLE": "CSP Adapter Error",
-    "NV_ERR_TITLE": "NeuVector Error",
+    "NV_ERR_TITLE": "UranusCS Error",
     "EXPIRE_TITLE": "Expiration Warning",
     "EXPIRE_STATE": "Billing data expired time: ",
     "IMPORT_NOTICE": "Importing policy will overwrite groups and rules, importing all will overwrite policy and all users and passwords and settings such as SYSLOG and other configurations.",
@@ -2972,7 +2972,7 @@
     "COLLECT": "Collect support bundle",
     "USAGE_RPT": "Usage report",
     "SUPPORT_IN_PROGRESS": "Collecting logs for Manager, Controller and Enforcer...",
-    "SUPPORT_INFO": "Please send to support@neuvector.com",
+    "SUPPORT_INFO": "Please send to support@uranuscs.com",
     "EXPORT_OK": "Exporting file is successful",
     "EXPORT_FAILED": "Failed to export file",
     "SUBMIT_OK": "System config updated.",
@@ -2989,17 +2989,17 @@
     "M2P": "Monitor to Protect",
     "D2M_HINT": "The criterion for moving from Discover to Monitor mode is: elapsed time for learning all network and process activity of at least one live pod in the Group. For example, if this is set to 7 days, then 7 days after a running pod for the group is detected, the mode will be automatically promoted to Monitor.",
     "M2P_HINT": "The criterion for moving from Monitor to Protect mode is: there are no security events (network, process etc) for the timeframe set for the Group. For example, if this is set to 14 days, then if no violations (network, process, file) are triggered for 14 days (e.g. the quiet period), then the mode is automatically promoted to Protect. If there are no running pods in the group, the promotion will not occur.",
-    "AUTH_BY_OPENSHIFT": "Authenticate using OpenShift’s or Rancher’s RBAC",
+    "AUTH_BY_OPENSHIFT": "Authenticate using OpenShift’s RBAC",
     "NEED_SUBMIT": "Need submit",
     "ENABLED": "Enabled",
     "DISABLED": "Disabled",
     "REG_PROXY": "Proxy",
-    "PROXY_HINT": "Proxy for accessing external services (such as registry servers). Proxy is also supported for communications among NeuVector clusters in the same federation when direct access between clusters is not allowed.",
+    "PROXY_HINT": "Proxy for accessing external services (such as registry servers). Proxy is also supported for communications among UranusCS clusters in the same federation when direct access between clusters is not allowed.",
     "REG_HTTP_PROXY": "Http Proxy",
     "REG_HTTPS_PROXY": "Https Proxy",
     "XFF_MATCH": "X-Forwarded-For based policy match",
     "TELEMETRY": "Report anonymous cluster data",
-    "TELEMETRY_HINT": "The controller will report cluster data anonymously to help SUSE NeuVector teams with usage information.",
+    "TELEMETRY_HINT": "The controller will report cluster data anonymously to help UranusCS teams with usage information.",
     "DISABLE_NET_POLICY": "Network Policy Enforcement",
     "DISABLE_NET_POLICY_HINT": "To only use WAF/DLP for network protection please disable network policy enforcement. When it is disabled no network rule can be learned.",
     "USERNAME": "Username",
@@ -3009,7 +3009,7 @@
     "URL_EXPIRE": "URL is valid until {{time}}",
     "IBM_SA_ERR": "Error happened when getting URL",
     "DASHBOARD_URL": "Dashboard URL",
-    "IBM_SETUP_URL": "NeuVector setup URL",
+    "IBM_SETUP_URL": "UranusCS setup URL",
     "GET_URL": "Get URL",
     "SETUP_DONE_NO_TIME": "Connected",
     "SETUP_DONE": "Connected at {{time}}",
@@ -3148,10 +3148,10 @@
     "USERNAME_ATTR_HINT": "The attribute field to use when loading the user.",
     "USERNAME_ATTR_MESSAGE": "Please enter a valid username attribute",
     "ADD_GROUP": "Add Group",
-    "ADMIN_HINT": "Add LDAP/AD groups which map to NeuVector admin",
-    "READER_HINT": "Add LDAP/AD groups which map to NeuVector reader",
-    "CI_HINT": "Add LDAP/AD groups which map to NeuVector CI Integration",
-    "BASE_DN_HINT": "Root node in LDAP/AD from which to search users and groups. e.g. dc=neuvector, dc=com",
+    "ADMIN_HINT": "Add LDAP/AD groups which map to UranusCS admin",
+    "READER_HINT": "Add LDAP/AD groups which map to UranusCS reader",
+    "CI_HINT": "Add LDAP/AD groups which map to UranusCS CI Integration",
+    "BASE_DN_HINT": "Root node in LDAP/AD from which to search users and groups. e.g. dc=securitysuite, dc=com",
     "BASE_DN_MESSAGE": "Please enter a valid base DN.",
     "HOST_REQUIRED": "Host is required.",
     "PORT_REQUIRED": "Port is required.",
@@ -3178,9 +3178,9 @@
     "EXTRA_CERT": "Extra X.509 Certificate",
     "INVALID_URL": "Please input valid url.",
     "GROUP_CLAIM": "Group Claim",
-    "ADMIN_HINT": "Add SAML groups which map to NeuVector admin",
-    "READER_HINT": "Add SAML groups which map to NeuVector reader",
-    "CI_HINT": "Add SAML groups which map to NeuVector CI Integration",
+    "ADMIN_HINT": "Add SAML groups which map to UranusCS admin",
+    "READER_HINT": "Add SAML groups which map to UranusCS reader",
+    "CI_HINT": "Add SAML groups which map to UranusCS CI Integration",
     "LOAD_ERR": "Failed to set up SAML",
     "CALLBACK_URL": "SAML Redirect URI: ",
     "message": {
@@ -3199,9 +3199,9 @@
     "CLIENT_ID": "Client ID",
     "CLIENT_SECRET": "Client Secret",
     "SCOPES": "Scopes",
-    "ADMIN_HINT": "Add OpenID Connect groups which map to NeuVector admin",
-    "READER_HINT": "Add OpenID Connect groups which map to NeuVector reader",
-    "CI_HINT": "Add OpenID Connect groups which map to NeuVector CI Integration",
+    "ADMIN_HINT": "Add OpenID Connect groups which map to UranusCS admin",
+    "READER_HINT": "Add OpenID Connect groups which map to UranusCS reader",
+    "CI_HINT": "Add OpenID Connect groups which map to UranusCS CI Integration",
     "LOAD_ERR": "Failed to set up OpenID Connect",
     "CALLBACK_URL": "OpenID Connect Redirect URI: ",
     "message": {

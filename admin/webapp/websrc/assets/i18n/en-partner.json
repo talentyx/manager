@@ -1,65 +1,65 @@
 {
   "partner": {
     "general": {
-      "WEB_URL": "http://www.neuvector.com",
-      "PROVIDER": "NeuVector",
-      "DOCUMENT_URL": "https://open-docs.neuvector.com",
+      "WEB_URL": "http://www.uranuscs.com",
+      "PROVIDER": "UranusCS",
+      "DOCUMENT_URL": "https://docs.uranuscs.com",
       "LOGO_NAME": "LOGO"
     },
     "top_security_events": {
-      "txt2_3": "3. Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by NeuVector.",
-      "txt4_3": "3. Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by NeuVector."
+      "txt2_3": "3. Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by UranusCS.",
+      "txt4_3": "3. Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by UranusCS."
     },
     "top_incident_pod": {
-      "txt2": "How to Use It: Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by NeuVector."
+      "txt2": "How to Use It: Often a compromised or hacked pod will have multiple process and file system incidents as the hacker tries to install malicious code or vulnerable packages and/or start suspicious processes. Pods can be quarantined or a packet capture started by UranusCS."
     },
     "containers": {
       "report": {
-        "header": "NeuVector Container Security Report"
+        "header": "Uranus Container Security Report"
       }
     },
     "securityEvent": {
       "pdf": {
-        "HEADER": "NeuVector Container Security Report"
+        "HEADER": "Uranus Container Security Report"
       }
     },
     "group": {
-      "CRITERIA_HINT": "Sample: container=myServer, namespace!=default, node=ubuntu*, image=*nginx*, address=216.58.194.0/24, address=0.0.0.0/0, address=0.0.0.0-255.255.255.255, address=*.neuvector.com, container~k8s_zoo[12] or key=value for label (\"=\" exactly match, \"!\" not, \"? and *\" wildcards, \"~\" regex)"
+      "CRITERIA_HINT": "Sample: container=myServer, namespace!=default, node=ubuntu*, image=*nginx*, address=216.58.194.0/24, address=0.0.0.0/0, address=0.0.0.0-255.255.255.255, address=*.uranuscs.com, container~k8s_zoo[12] or key=value for label (\"=\" exactly match, \"!\" not, \"? and *\" wildcards, \"~\" regex)"
     },
     "admissionControl": {
       "msg": {
-        "CLUSTER_ROLE_NOT_CONFIG": "The neuvector-binding-admission clusterrole/clusterrolebinding required for Neuvector Admission Control is not configured correctly.",
-        "WEBHOOK_NOT_CONFIG": "The neuvector-svc-admission-webhook service required for Neuvector Admission Control is not configured correctly.",
-        "NO_UPD_PROMISSION": "NeuVector default service account doesn't have UPDATE permission for service resource."
+        "CLUSTER_ROLE_NOT_CONFIG": "The uranuscs-binding-admission clusterrole/clusterrolebinding required for UranusCS Admission Control is not configured correctly.",
+        "WEBHOOK_NOT_CONFIG": "The uranuscs-svc-admission-webhook service required for UranusCS Admission Control is not configured correctly.",
+        "NO_UPD_PROMISSION": "UranusCS default service account doesn't have UPDATE permission for service resource."
       }
     },
     "license": {
       "HEAD": "END USER LICENSE AGREEMENT",
-      "SUB_HEAD": "for NeuVector open source products",
+      "SUB_HEAD": "for UranusCS products",
       "server": {
-        "APPLY_DESC": "Enter code received from NeuVector support",
-        "EMAIL": "support@neuvector.com"
+        "APPLY_DESC": "Enter code received from UranusCS support",
+        "EMAIL": "support@uranuscs.com"
       }
     },
     "setting": {
-      "SUPPORT_INFO": "Please send to support@neuvector.com",
-      "IBM_SETUP_URL": "NeuVector setup URL"
+      "SUPPORT_INFO": "Please send to support@uranuscs.com",
+      "IBM_SETUP_URL": "UranusCS setup URL"
     },
     "ldap": {
-      "ADMIN_HINT": "Add LDAP/AD groups which map to NeuVector admin",
-      "READER_HINT": "Add LDAP/AD groups which map to NeuVector reader",
-      "CI_HINT": "Add LDAP/AD groups which map to NeuVector CI Integration",
-      "BASE_DN_HINT": "Root node in LDAP/AD from which to search users and groups. e.g. dc=neuvector, dc=com"
+      "ADMIN_HINT": "Add LDAP/AD groups which map to UranusCS admin",
+      "READER_HINT": "Add LDAP/AD groups which map to UranusCS reader",
+      "CI_HINT": "Add LDAP/AD groups which map to UranusCS CI Integration",
+      "BASE_DN_HINT": "Root node in LDAP/AD from which to search users and groups. e.g. dc=securitysuite, dc=com"
     },
     "okta": {
-      "ADMIN_HINT": "Add SAML groups which map to NeuVector admin",
-      "READER_HINT": "Add SAML groups which map to NeuVector reader",
-      "CI_HINT": "Add SAML groups which map to NeuVector CI Integration"
+      "ADMIN_HINT": "Add SAML groups which map to UranusCS admin",
+      "READER_HINT": "Add SAML groups which map to UranusCS reader",
+      "CI_HINT": "Add SAML groups which map to UranusCS CI Integration"
     },
     "openId": {
-      "ADMIN_HINT": "Add OpenID Connect groups which map to NeuVector admin",
-      "READER_HINT": "Add OpenID Connect groups which map to NeuVector reader",
-      "CI_HINT": "Add OpenID Connect groups which map to NeuVector CI Integration"
+      "ADMIN_HINT": "Add OpenID Connect groups which map to UranusCS admin",
+      "READER_HINT": "Add OpenID Connect groups which map to UranusCS reader",
+      "CI_HINT": "Add OpenID Connect groups which map to UranusCS CI Integration"
     }
   }
 }
