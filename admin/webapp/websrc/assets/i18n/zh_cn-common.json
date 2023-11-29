@@ -7,9 +7,9 @@
     "FAILED_TO_ADD": "添加失败",
     "FAILED_TO_UPDATE": "更新失败",
     "FAILED_TO_DELETE": "删除失败",
-    "WEB_URL": "http://www.neuvector.com",
-    "PROVIDER": "demo",
-    "DOCUMENT_URL": "https://open-docs.neuvector.com",
+    "WEB_URL": "http://www.uranuscs.com",
+    "PROVIDER": "UranusCS",
+    "DOCUMENT_URL": "https://docs.uranuscs.com",
     "LOGO_NAME": "LOGO",
     "REQUIRED": "请输入必填项!",
     "REQUIRED_SHORT": "必填项",
@@ -200,7 +200,7 @@
   },
   "logout": {
     "SIGN_OUT": "已经登出了",
-    "SIGN_OUT_DESC": "您可以关闭此浏览器窗口, 然后回到Rancher."
+    "SIGN_OUT_DESC": "您可以关闭此浏览器窗口"
   },
   "login": {
     "SIGN_IN": "登录",
@@ -217,16 +217,16 @@
     "AUTH_ERROR": "身分验证错误!",
     "SESSION_TIMEOUT": "会话超时，请重新登录",
     "CHANGE_DEFAULT_PASSWORD": "请修改缺省密码!",
-    "CHANGE_DEFAULT_PASSWORD_RANCHER": "NeuVector的默认Admin的密码应该被修改!",
+    "CHANGE_DEFAULT_PASSWORD_RANCHER": "UranusCS的默认Admin的密码应该被修改!",
     "CHANGE_EXPIRING_PASSWORD": "您需要更新密码,因为密码将于{{expiring_Days}}天内过期!",
     "CHANGE_EXPIRING_PASSWORD_NOW": "您需要立即更新密码, 因为密码今天即将过期!",
     "UNSUPPORTED_ROLE": "该用户仅用于CI集成。",
     "VERSION_MISMATCHED": "管理界面, 控制器和代理之间有运行版本差异",
     "CVE_DB_OLD": "CVE数据库有{{day}}天没有更新",
-    "UPGRADE_AVAILABLE": "NeuVector 正在运行{{currentVersion}}可以升级到{{newVersion}}"
+    "UPGRADE_AVAILABLE": "UranusCS正在运行{{currentVersion}}可以升级到{{newVersion}}"
   },
   "dashboard": {
-    "WELCOME": "欢迎使用 {{appName}}",
+    "WELCOME": "欢迎使用 UranusCS",
     "REFRESH": "刷新",
     "TITLE": "概览",
     "GENERAL_REPORT": "安全事件及风险报告",
@@ -450,12 +450,12 @@
         "CLUSTERROLEBINDING_ERRORS": "集群角色绑定",
         "ROLEBINDING_ERRORS": "角色绑定",
         "ROLE_ERRORS": "Role",
-        "NEUVECTOR_CRD_ERRORS": "Neuvector CRD"
+        "NEUVECTOR_CRD_ERRORS": "UranusCS CRD"
       }
     },
     "help": {
       "exposure": {
-        "txt1": "集群的网络通讯：暴露在外的网络接口有很大的安全风险。进出集群以及集群内容器之间的网络连接会被NeuVector检查，NeuVector会实时显示应用程序通讯协议。保护或者监视模式下，由网络安全策略来决定是否允许进行网络通讯，并且触发实时阻挡或者报警",
+        "txt1": "集群的网络通讯：暴露在外的网络接口有很大的安全风险。进出集群以及集群内容器之间的网络连接会被UranusCS检查，UranusCS会实时显示应用程序通讯协议。保护或者监视模式下，由网络安全策略来决定是否允许进行网络通讯，并且触发实时阻挡或者报警",
         "txt2": "改进方法：检查集群入口和出口的网络连接以允许正常连接通过，检查被阻挡报警的网络连接，如果这个连接是应该允许的，修改相关网络安全策略将他们列入白名单。"
       },
       "criticalEvent": {
@@ -467,12 +467,12 @@
         "txt2": "改进方法：查看有安全事件的高危容器，看看是否存在以下现象：",
         "txt2_1": "1. 容器是否被利用来产生网络攻击（比如横向，东西向的网络通讯）。修复发现的安全问题。",
         "txt2_2": "2. 容器是否被攻破并被利用做横向扩张或尝试外连。 如果这些连接是正常的，为它们添加相应的网络白名单规则",
-        "txt2_3": "3. 检查被攻陷或被黑客攻击的容器，检测有无多个可疑进程，有无黑客试图安装恶意代码或进行文件操作，有无被安装易受攻击的软件包和/或启动了可疑进程等等。使用NeuVector的安全策略来启动容器隔离以及抓取数据包来保护动作。",
+        "txt2_3": "3. 检查被攻陷或被黑客攻击的容器，检测有无多个可疑进程，有无黑客试图安装恶意代码或进行文件操作，有无被安装易受攻击的软件包和/或启动了可疑进程等等。使用UranusCS的安全策略来启动容器隔离以及抓取数据包来保护动作。",
         "txt3": "高危目标容器：显示被网络攻击最多的容器。网络威胁指网络中检测到的可疑数据包或连接，如DDoS，sql注入等, 拥有未授权连接最多的容器。外部违规行为指可疑的外部网络连接行为, 可疑的容器进程或文件系统事件。",
         "txt4": "改进方法：查看有安全事件的高危容器，看看是否存在以下现象：",
         "txt4_1": "1. 该容器是否被攻击或损坏。修复发现的安全问题。",
         "txt4_2": "2. 外连的目的地址确定是否授权，特别检查从客户端容器或外部（入口）来的连接。如果需要允许该连接，请添加网络白名单规则。",
-        "txt4_3": "3. 检查被攻陷或被黑客攻击的容器，检测有无多个可疑进程，有无黑客试图安装恶意代码或进行文件操作，有无被安装易受攻击的软件包和/或启动了可疑进程等等。使用NeuVector的安全策略来启动容器隔离以及抓取数据包来保护动作。"
+        "txt4_3": "3. 检查被攻陷或被黑客攻击的容器，检测有无多个可疑进程，有无黑客试图安装恶意代码或进行文件操作，有无被安装易受攻击的软件包和/或启动了可疑进程等等。使用UranusCS的安全策略来启动容器隔离以及抓取数据包来保护动作。"
       },
       "top_thread": {
         "txt1": "高危源容器：显示发出网络攻击最多的容器。网络威胁指网络中检测到的可疑数据包或连接，比如DDoS，sql注入等网络攻击。",
@@ -488,7 +488,7 @@
       },
       "top_incident_pod": {
         "txt1": "高危容器事件：显示可疑的容器进程或文件系统事件。",
-        "txt2": "改进方法：检查被攻陷或被黑客攻击的容器，检测有无多个可疑进程，有无黑客试图安装恶意代码或进行文件操作，有无被安装易受攻击的软件包和/或启动了可疑进程等等。使用NeuVector的安全策略来启动容器隔离以及抓取数据包来保护动作。"
+        "txt2": "改进方法：检查被攻陷或被黑客攻击的容器，检测有无多个可疑进程，有无黑客试图安装恶意代码或进行文件操作，有无被安装易受攻击的软件包和/或启动了可疑进程等等。使用UranusCS的安全策略来启动容器隔离以及抓取数据包来保护动作。"
       },
       "top_incident_node": {
         "txt1": "高危主机事件：显示文件系统或进程违规数量最多的主机。",
@@ -496,18 +496,18 @@
       },
       "top_vulnerable_pod": {
         "txt1": "高危容器：显示在实时扫描中发现的严重安全漏洞数量最多的容器。",
-        "txt2": "改进方法：查看每个容器里严重级别的CVE，了解风险大小。确保这个服务/容器有相应的网络规则来保护。 如果评估后不是高风险容器，可以定制NeuVector漏洞扫描来取消相关CVE的警报。"
+        "txt2": "改进方法：查看每个容器里严重级别的CVE，了解风险大小。确保这个服务/容器有相应的网络规则来保护。 如果评估后不是高风险容器，可以定制UranusCS漏洞扫描来取消相关CVE的警报。"
       },
       "top_vulnerable_node": {
         "txt1": "高危主机：显示实时扫描中发现的严重安全漏洞数量最多的主机。",
-        "txt2": "改进方法：查看每个容器里严重级别的CVE，了解风险大小。如果是严重问题则立刻修复。如果评估后不是高风险主机，可以定制NeuVector漏洞扫描来取消相关CVE的警报。"
+        "txt2": "改进方法：查看每个容器里严重级别的CVE，了解风险大小。如果是严重问题则立刻修复。如果评估后不是高风险主机，可以定制UranusCS漏洞扫描来取消相关CVE的警报。"
       },
       "policy_mode_pod": {
         "txt1": "安全模式图：显示应用服务在发现模式，监控模式和保护模式下的总数量和比率。容器视图：显示容器在发现模式，监控模式和保护模式下的总数量和比率。（每个服务可以部署多个容器）",
-        "txt2": "改进方法：处于发现模式下的服务和容器，他们的白名单网络行为策略还没生效，也不会执行网络分隔。在NeuVector管理界面中审核安全他们的安全规则后，请尽快将该服务和容器切换到监视模式或保护模式下。"
+        "txt2": "改进方法：处于发现模式下的服务和容器，他们的白名单网络行为策略还没生效，也不会执行网络分隔。在UranusCS管理界面中审核安全他们的安全规则后，请尽快将该服务和容器切换到监视模式或保护模式下。"
       },
       "application": {
-        "txt1": "应用协议图：显示了使用各种应用程序协议的会话数量。对于每一种检测到的应用程序协议，NeuVector已经创建了相应的（第7层）网络规则，网络连接的白名单。“其他”是指不能识别的7层协议比如某种特殊的非标准TCP连接。",
+        "txt1": "应用协议图：显示了使用各种应用程序协议的会话数量。对于每一种检测到的应用程序协议，UranusCS已经创建了相应的（第7层）网络规则，网络连接的白名单。“其他”是指不能识别的7层协议比如某种特殊的非标准TCP连接。",
         "txt2": "改进方法：查看协议列表以确保所有常见应用程序协议被正确检测并列入网络白名单策略。",
         "txt3": "应用协议流量图：显示检测到的每个应用协议所产生的流量。",
         "txt4": "改进方法：在测试流量或在生产环境中查看网络会话时，评估它是否正常通讯。大流量的通讯活动可能是某种应用程序的攻击，数据泄露或网络配置错误。需要及时找到源头并且修复。"
@@ -983,7 +983,7 @@
   },
   "containers": {
     "report": {
-      "header": "NeuVector容器安全报告",
+      "header": "UranusCS容器安全报告",
       "footer": "容器安全报告",
       "download": "生成隔离报告",
       "title": "隔离报告",
@@ -1553,7 +1553,7 @@
       "DETAILS": "详细",
       "ACTION": "操作",
       "DATETIME": "日期时间",
-      "HEADER": "NeuVector容器安全报告",
+      "HEADER": "UranusCS容器安全报告",
       "FOOTER": "容器安全报告",
       "TYPEDIST": "事件类型分布"
     }
@@ -1827,7 +1827,7 @@
       "ONEMONTH": "一月后",
       "ONEYEAR": "一年后",
       "HOURS": "自定",
-      "WARNING": "NeuVector 强烈建议您为您的令牌设置到期日期，以帮助保护您的信息安全。",
+      "WARNING": "UranusCS 强烈建议您为您的令牌设置到期日期，以帮助保护您的信息安全。",
       "time": {
         "YEARS": "年",
         "MONTHS": "月",
@@ -2070,7 +2070,7 @@
     "HAS_RULES_WARNING": "使用该组的网络规则或/与响应规则将被一起删除.",
     "ADD_ITEM_TITLE": "添加组",
     "ADD_PROFILE_RULE_WARNING": "请在创建规则之前添加组!",
-    "CRITERIA_HINT": "例如：container=容器名, namespace!=default, node=ubuntu*, image=*nginx*, address=216.58.194.0/24, address=0.0.0.0/0, address=0.0.0.0-255.255.255.255, address=*.neuvector.com, container~k8s_zoo[12] 或者 键=值 ('='完全匹配, 'not'非, '？ 和 *'通配符, '~'正则表达式)",
+    "CRITERIA_HINT": "例如：container=容器名, namespace!=default, node=ubuntu*, image=*nginx*, address=216.58.194.0/24, address=0.0.0.0/0, address=0.0.0.0-255.255.255.255, address=*.uranuscs.com, container~k8s_zoo[12] 或者 键=值 ('='完全匹配, 'not'非, '？ 和 *'通配符, '~'正则表达式)",
     "BAD_FORMAT": "条件格式错误.",
     "VIEW_GROUP": "浏览组",
     "REMOVE_CONFIRM": "你确定要删除这个组吗?",
@@ -2604,10 +2604,10 @@
       "ENABLE_CONFIRM_DEFAULT": "启用这条默认规则会许可 {{namespace}} 命名空间里的部署.",
       "PROTECT_CONFIRM": "转换到'保护模式'吗?",
       "UNSUPPORTED": "由于不是Kubernetes平台, 不支持此操作.",
-      "CONFIG_K8S_FAIL": "Kubernetes系统的准入控制配置失败, 请确认neuvector:default的 \"cluster role\" 和 \"cluster role binding\" 配置正确.",
-      "CLUSTER_ROLE_NOT_CONFIG": "没有正确配置Neuvector准入控制需要的neuvector-binding-admission的 \"cluster role\" 和 \"cluster role binding\".",
-      "WEBHOOK_NOT_CONFIG": "没有正确配置Neuvector准入控制需要的neuvector-svc-admission-webhook服务.",
-      "NO_UPD_PROMISSION": "NeuVector默认服务账户没有服务资源的更新权限.",
+      "CONFIG_K8S_FAIL": "Kubernetes系统的准入控制配置失败, 请确认uranuscs:default的 \"cluster role\" 和 \"cluster role binding\" 配置正确.",
+      "CLUSTER_ROLE_NOT_CONFIG": "没有正确配置UranusCS准入控制需要的uranuscs-binding-admission的 \"cluster role\" 和 \"cluster role binding\".",
+      "WEBHOOK_NOT_CONFIG": "没有正确配置UranusCS准入控制需要的uranuscs-svc-admission-webhook服务.",
+      "NO_UPD_PROMISSION": "UranusCS默认服务账户没有服务资源的更新权限.",
       "ERR_SRV2WEBHOOK": "Kube-apiserver的请求接收失败. 请尝试别的客户模式.",
       "TEST_K8S_OK": "Kubernetes系统连接正常.",
       "SAVE_CLIENT_MODE": "将选定的模式提交到Kubernetes设置以便进行Kubernetes请求连接的测试.",
@@ -2877,7 +2877,7 @@
       "ID": "许可证申请ID",
       "PRE_DESC": "申请许可证请联络 ",
       "APPLY_DESC": "请输入我们发送回的授权码",
-      "EMAIL": "support@neuvector.com",
+      "EMAIL": "support@uranuscs.com",
       "POST_DESC": "我们将很快与您联系。"
     },
     "register": {
@@ -2941,12 +2941,12 @@
     "EXPORT": "输出",
     "IMPORT": "输入",
     "CLOUD_BILLING": "{{cloud}}市场支持",
-    "CLOUD_BILLING_HINT_1": "如果您是通过{{cloud}}市场（即通过{{cloud}}账户整合账单）来订阅SUSE支持的NeuVector, 请下载本支持文件。您将需要用您的SUSE SCC账户上传至",
-    "CLOUD_SUPPORT_LINK": "https://scc.suse.com/cloudsupport",
+    "CLOUD_BILLING_HINT_1": "如果您是通过{{cloud}}市场（即通过{{cloud}}账户整合账单）来订阅UranusCS, 请下载本支持文件。您将需要用您的账户上传至",
+    "CLOUD_SUPPORT_LINK": "https://uranuscs.com/cloudsupport",
     "CLOUD_BILLING_HINT_2": "来创建支持案件.",
     "DOWNLOAD_SUPPORT_FILE": "下载支持文件",
     "CSP_ERR_TITLE": "CSP适配器错误",
-    "NV_ERR_TITLE": "NeuVector错误",
+    "NV_ERR_TITLE": "UranusCS错误",
     "EXPIRE_TITLE": "过期警告",
     "EXPIRE_STATE": "账单数据过期时间:",
     "IMPORT_NOTICE": "输入策略将覆盖组和规则, 输入全体将覆盖策略所有用户和密码以及系统日志等设置.",
@@ -2972,7 +2972,7 @@
     "COLLECT": "收集支持包",
     "USAGE_RPT": "用途报告",
     "SUPPORT_IN_PROGRESS": "正收集系统各组件日志...",
-    "SUPPORT_INFO": "请发送support@neuvector.com",
+    "SUPPORT_INFO": "请发送support@uranuscs.com",
     "EXPORT_OK": "文件导出成功",
     "EXPORT_FAILED": "文件导出失败",
     "SUBMIT_OK": "系统设置更新成功!",
@@ -2989,17 +2989,17 @@
     "M2P": "监视模式到保护模式",
     "D2M_HINT": "从学习模式到监视模式的条件: 至少组里一个活跃Pod学习全部网络和进程活动所需时间. 例如, 如果设置为7天, 则一个组里运行的Pod和检测到的7天后, 模式将自动升级到监视模式.",
     "M2P_HINT": "从监视模式到保护模式的条件: 在一段时间内组里没有安全事件(包括网络, 进程等). 例如, 如果设置为14天, 则如果14天内没有触发违规(包括网络, 进程, 文件) (亦称安静期), 则模式将自动升级到保护模式. 如果组里没有运行的Pod, 升级将不会发生.",
-    "AUTH_BY_OPENSHIFT": "用OpenShift或Rancher的RBAC验证",
+    "AUTH_BY_OPENSHIFT": "用OpenShift验证",
     "NEED_SUBMIT": "需要提交",
     "ENABLED": "启用",
     "DISABLED": "禁用",
     "REG_PROXY": "代理",
-    "PROXY_HINT": "外部访问代理(比如镜像库服务器), 代理还被支持于当不允许直接集群访问时，在同一集群全局的NeuVector集群之间的交互",
+    "PROXY_HINT": "外部访问代理(比如镜像库服务器), 代理还被支持于当不允许直接集群访问时，在同一集群全局的UranusCS集群之间的交互",
     "REG_HTTP_PROXY": "Http代理",
     "REG_HTTPS_PROXY": "Https代理",
     "XFF_MATCH": "基于X-Forwarded-For的策略匹配",
     "TELEMETRY": "报告匿名集群数据",
-    "TELEMETRY_HINT": "控制器将匿名报告集群数据，以帮助 SUSE NeuVector 团队了解使用信息。",
+    "TELEMETRY_HINT": "控制器将匿名报告集群数据，以帮助 UranusCS 团队了解使用信息。",
     "DISABLE_NET_POLICY": "网络策略实施",
     "DISABLE_NET_POLICY_HINT": "若只使用WAF/DLP做网络保护，请禁用强制的网络策略。当它被禁用时网络规则不能被学习。",
     "USERNAME": "用户名",
@@ -3009,7 +3009,7 @@
     "URL_EXPIRE": "URL的有效时间到 {{time}}",
     "IBM_SA_ERR": "获取URL时发生错误",
     "DASHBOARD_URL": "概览页URL",
-    "IBM_SETUP_URL": "NeuVector设置URL",
+    "IBM_SETUP_URL": "UranusCS设置URL",
     "GET_URL": "获取URL",
     "SETUP_DONE_NO_TIME": "连接完毕",
     "SETUP_DONE": "于{{time}}连接完毕",
