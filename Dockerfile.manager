@@ -4,15 +4,6 @@ FROM neuvector/${BASE_PREFIX}manager_base:${BASE_IMAGE_TAG}
 
 COPY stage /
 
-ARG NV_TAG
-LABEL name="manager" \
-      vendor="NeuVector Inc." \
-      version=${NV_TAG} \
-      release=${NV_TAG} \
-      neuvector.image="neuvector/manager" \
-      neuvector.role="manager" \
-      neuvector.rev="git.xxxx"
-
 RUN adduser -S manager
 USER manager
 

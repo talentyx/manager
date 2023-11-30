@@ -24,7 +24,7 @@ pull_base:
 	docker pull neuvector/manager_base:${BASE_IMAGE_TAG}
 
 manager_image: pull_base stage_mgr
-	docker build --build-arg NV_TAG=$(NV_TAG) --build-arg BASE_IMAGE_TAG=${BASE_IMAGE_TAG} --no-cache=true -t neuvector/manager -f Dockerfile.manager .
+	docker build --build-arg NV_TAG=$(NV_TAG) --build-arg BASE_IMAGE_TAG=${BASE_IMAGE_TAG} --no-cache=true -t uranuscs/manager -f Dockerfile.manager .
 
 jar:
 	@echo "Pulling images ..."
