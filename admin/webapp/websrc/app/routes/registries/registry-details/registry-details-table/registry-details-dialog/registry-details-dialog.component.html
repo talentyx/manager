@@ -21,7 +21,7 @@
     <mat-tab-group
       (selectedTabChange)="resizeChildGrids()"
       class="h-100 registry-dialog-tab-group">
-      <mat-tab label="Vulnerabilities">
+      <mat-tab label="漏洞">
         <app-registry-vulnerabilities
           (acceptVulnerability)="onAcceptVulnerability($event)"
           (showAcceptedVulnerability)="toggleAcceptedVulnerability()"
@@ -38,7 +38,7 @@
           [scannerVersion]="data.image.scanner_version">
         </app-registry-vulnerabilities>
       </mat-tab>
-      <mat-tab label="Compliance">
+      <mat-tab label="合规">
         <app-compliance-grid
           [baseOS]="data.image.base_os"
           [imageId]="data.image.image_id"
@@ -52,7 +52,7 @@
           tableHeight="calc(100% - 42px)">
         </app-compliance-grid>
       </mat-tab>
-      <mat-tab label="Modules">
+      <mat-tab label="模块">
         <app-registry-modules
           [baseOS]="data.image.base_os"
           [imageId]="data.image.image_id"
