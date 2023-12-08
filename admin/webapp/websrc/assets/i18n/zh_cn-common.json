@@ -845,6 +845,7 @@
       "SCAN": "漏洞",
       "REG_SCAN": "镜像库",
       "RISK": "安全隐患",
+      "COMPLIANCE":"合规",
       "BENCH": "合规",
       "NOTIFICATIONS": "通知",
       "SECURITY_EVENT": "安全事件",
