@@ -108,7 +108,7 @@ const SECURITY_RISKS = {
 };
 const COMPLIANCE = {
   text: 'compliance',
-  translate: 'sidebar.nav.RISK',
+  translate: 'sidebar.nav.COMPLIANCE',
   icon: 'stateful_set',
   submenu: [
     {
