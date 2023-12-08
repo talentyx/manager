@@ -104,6 +104,13 @@ const SECURITY_RISKS = {
       translate: 'cveProfile.TITLE',
       link: '/cveProfile',
     },
+  ],
+};
+const COMPLIANCE = {
+  text: 'compliance',
+  translate: 'sidebar.nav.RISK',
+  icon: 'stateful_set',
+  submenu: [
     {
       text: 'Compliance',
       translate: 'sidebar.nav.BENCH',
@@ -151,6 +158,7 @@ export const menu = [
   ASSETS,
   POLICY,
   SECURITY_RISKS,
+  COMPLIANCE,
   NOTIFICATIONS,
   SETTINGS,
 ];
