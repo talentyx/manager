@@ -112,7 +112,7 @@ export class SecurityEventsChartComponent implements OnInit {
           },
           title: {
             display: true,
-            text: 'Security Events'
+            text: '安全事件'
           }
         }
       },
