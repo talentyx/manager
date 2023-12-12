@@ -1469,7 +1469,7 @@
     "PROC_RULE": "进程规则",
     "FILE_RULE": "文件访问规则",
     "ADM_RULE": "准入规则",
-    "RESPONSE_RULE": "应对规则",
+    "RESPONSE_RULE": "响应规则",
     "REPORTED_BY": "报告点",
     "NEW_RULE_WARNING": "建议的规则是基于安全事件创建的。请在部署规则之前确认所有的属性。",
     "VIOLATED_RULE": "违反的规则",
@@ -1624,7 +1624,7 @@
       "USER": "用户",
       "IMAGE": "镜像",
       "TAG": "标签",
-      "RESPONSE_RULE_ID": "应对规则ID",
+      "RESPONSE_RULE_ID": "响应规则ID",
       "OCCURRENCES": "数量",
       "DURATION": "时间范围"
     },
@@ -2059,7 +2059,7 @@
       "PROFILE_MODE": "进程规则模式",
       "TYPE": "类型",
       "USED_BY_RULES": "应用于网络策略",
-      "USED_BY_RESPONSE_RULES": "应用于应对规则",
+      "USED_BY_RESPONSE_RULES": "应用于响应规则",
       "VULNERABILITIES": "漏洞",
       "DOMAIN": "命名空间",
       "MEMBERS": "成员",
@@ -2119,7 +2119,7 @@
     },
     "dlp": {
       "TITLE": "DLP",
-      "COUNT_POSTFIX": "个DLP检测器",
+      "COUNT_POSTFIX": "个DLP规则",
       "gridHeader": {
         "NAME": "名称",
         "COMMENT": "说明",
@@ -2138,12 +2138,12 @@
         "SETTING_NG": "该组DLP设置时发生错误!",
         "EXPORT_OK": "该组的配置文件已成功导出!",
         "EXPORT_NG": "导出该组的配置文件时发生错误!",
-        "ADD_DLP_WARNING": "您是否需要在该组添加DLP检测器?"
+        "ADD_DLP_WARNING": "您是否需要在该组添加DLP规则?"
       }
     },
     "waf": {
       "TITLE": "WAF",
-      "COUNT_POSTFIX": "个WAF检测器",
+      "COUNT_POSTFIX": "个WAF规则",
       "gridHeader": {
         "NAME": "名称",
         "COMMENT": "说明",
@@ -2160,7 +2160,7 @@
         "DISABLED_NG": "禁用改组的WAF设置时发生错误!",
         "SETTING_OK": "该组的WAF设置成功!",
         "SETTING_NG": "该组WAF设置时发生错误!",
-        "ADD_WAF_WARNING": "您是否需要在该组添加WAF检测器?"
+        "ADD_WAF_WARNING": "您是否需要在该组添加WAF规则?"
       }
     },
     "export": {
@@ -2262,7 +2262,7 @@
       "DELETE_PATTERN": "删除正则形式",
       "SWITCH_CONTEXT": "切换语境"
     },
-    "COUNT_POSTFIX": "个DLP检测器"
+    "COUNT_POSTFIX": "个DLP规则"
   },
   "waf": {
     "gridHeader": {
@@ -2343,7 +2343,7 @@
       "DELETE_PATTERN": "删除正则形式",
       "SWITCH_CONTEXT": "切换语境"
     },
-    "COUNT_POSTFIX": "个WAF检测器"
+    "COUNT_POSTFIX": "个WAF规则"
   },
   "policy": {
     "ACTIONS": "操作",
@@ -2485,7 +2485,7 @@
   },
   "responsePolicy": {
     "head": {
-      "TITLE": "应对规则"
+      "TITLE": "响应规则"
     },
     "gridHeader": {
       "ID": "ID",
@@ -2518,20 +2518,20 @@
     },
     "dialog": {
       "content": {
-        "INSERT_OK": "应对规则成功添加!",
-        "INSERT_NG": "应对规则添加失败!",
-        "UPDATE_OK": "应对规则成功更新!",
-        "UPDATE_NG": "应对规则更新失败!",
-        "REMOVE_OK": "应对规则成功删除!",
-        "REMOVE_NG": "应对规则删除失败!",
-        "DISABLE_OK": "应对规则成功禁用!",
-        "DISABLE_NG": "应对规则禁用失败!",
-        "ENABLE_OK": "应对规则成功启用!",
-        "ENABLE_NG": "应对规则启用失败!",
-        "UNQUARANTINE_OK": "应对规则成功取消隔离!",
-        "UNQUARANTINE_NG": "应对规则取消隔离失败!",
+        "INSERT_OK": "响应规则成功添加!",
+        "INSERT_NG": "响应规则添加失败!",
+        "UPDATE_OK": "响应规则成功更新!",
+        "UPDATE_NG": "响应规则更新失败!",
+        "REMOVE_OK": "响应规则成功删除!",
+        "REMOVE_NG": "响应规则删除失败!",
+        "DISABLE_OK": "响应规则成功禁用!",
+        "DISABLE_NG": "响应规则禁用失败!",
+        "ENABLE_OK": "响应规则成功启用!",
+        "ENABLE_NG": "响应规则启用失败!",
+        "UNQUARANTINE_OK": "响应规则成功取消隔离!",
+        "UNQUARANTINE_NG": "响应规则取消隔离失败!",
         "HINT": "例如: ",
-        "REMOVE_CONFIRM": "你要删除这条应对规则吗？ - ID: "
+        "REMOVE_CONFIRM": "你要删除这条响应规则吗？ - ID: "
       },
       "UNQUARANTINE_CHECK": "对所有受这条规则隔离的组取消隔离"
     }
