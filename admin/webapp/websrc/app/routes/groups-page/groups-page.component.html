@@ -7,7 +7,7 @@
       <div
         class="d-flex flex-column margin-left-m margin-top-s"
         *ngIf="netServiceStatus !== undefined">
-        <div>
+        <!-- <div>
           <span class="text-muted">
             {{ 'setting.NET_SERVICE_POLICY_MODE' | translate }}:&nbsp;
           </span>
@@ -19,7 +19,7 @@
             }">
             {{ netServiceStatus ? 'ON' : 'OFF' }}
           </span>
-          <!-- <em
+          <em
             class="fa fa-info-circle text-info"
             [matTooltip]="
                 ((netServiceStatus
@@ -27,8 +27,8 @@
                   : 'setting.description.DISABLED_NET_POLICY_MODE') | translate:{name: netServicePolicyMode})
             "
             matTooltipPosition="above">
-          </em> -->
-        </div>
+          </em>
+        </div> -->
         <!-- <a href="#/settings/configuration"
           >{{ 'sidebar.nav.SETTING' | translate }}&nbsp;>&nbsp;{{
             'sidebar.nav.CONFIGURATION' | translate
