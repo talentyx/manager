@@ -138,18 +138,24 @@ const NOTIFICATIONS = {
       translate: 'sidebar.nav.AUDIT',
       link: '/audit',
     },
+  ],
+};
+const SETTINGS = {
+  text: 'Settings',
+  translate: 'sidebar.nav.SYSTEM_MANAGEMENT',
+  icon: 'settings_suggest',
+  submenu: [
+    {
+      text: 'Settings',
+      translate: 'sidebar.nav.SETTING',
+      link: '/settings',
+    },
     {
       text: 'Events',
       translate: 'sidebar.nav.EVENT',
       link: '/event',
     },
-  ],
-};
-const SETTINGS = {
-  text: 'Settings',
-  translate: 'sidebar.nav.SETTING',
-  link: '/settings',
-  icon: 'settings_suggest',
+  ]
 };
 
 export const menu = [
