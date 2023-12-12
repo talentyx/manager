@@ -9,6 +9,10 @@ import { TranslateModule } from '@ngx-translate/core';
 const routes: Routes = [
   { path: '', component: SettingsComponent },
   {
+    path: 'license',
+    loadChildren: () => import('./license/license.module').then(m => m.LicenseModule),
+  },
+  {
     path: 'users',
     loadChildren: () => import('./users/users.module').then(m => m.UsersModule),
   },
