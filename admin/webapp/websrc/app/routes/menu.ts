@@ -146,14 +146,14 @@ const SETTINGS = {
   icon: 'settings_suggest',
   submenu: [
     {
-      text: 'Settings',
-      translate: 'sidebar.nav.SETTING',
-      link: '/settings',
-    },
-    {
       text: 'Events',
       translate: 'sidebar.nav.EVENT',
       link: '/event',
+    },
+    {
+      text: 'Settings',
+      translate: 'sidebar.nav.SETTING',
+      link: '/settings',
     },
   ]
 };
