@@ -7,6 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { LicenseComponent } from './license.component';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule, Routes } from '@angular/router';
+import { LoadingTemplateModule } from '@components/ui/loading-template/loading-template.module';
 import { SettingsService } from '@services/settings.service';
 import { LicenseInfoComponent } from './license-info/license-info.component';
 import { LicenseRenewComponent } from './license-renew/license-renew.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
     MatIconModule,
     TranslateModule,
     MatProgressSpinnerModule,
+    LoadingTemplateModule,
     MatInputModule,
     MatCardModule,
     MatButtonModule,
