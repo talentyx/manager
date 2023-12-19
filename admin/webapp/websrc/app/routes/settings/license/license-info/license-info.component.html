@@ -20,4 +20,11 @@
       <input [value]="license.info.phone || ' '" disabled matInput />
     </mat-form-field>
   </div>
+  <div class="license__field">
+    <i class="eos-icons eos-icons--dark-circle-bg mr-3">alarm</i>
+    <mat-form-field appearance="standard" class="w-100">
+      <mat-label>{{ 'license.register.DAYS_TO_EXPIRED' | translate }}</mat-label>
+      <input [value]="license.info.expired || '2024-12-30'" disabled matInput />
+    </mat-form-field>
+  </div>
 </div>

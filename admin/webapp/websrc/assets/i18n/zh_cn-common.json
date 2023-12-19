@@ -2499,7 +2499,7 @@
       "QUARANTINE": "隔离",
       "WEBHOOK": "Webhook",
       "DEFAULT": "缺省",
-      "SUPPRESS-LOG": "阻断日志"
+      "SUPPRESS-LOG": "日志记录"
     },
     "categories": {
       "THREAT": "威胁",
@@ -2889,6 +2889,7 @@
       "EXPIRE": "月数",
       "EXPIRE_DATE": "有效期",
       "GRACE": "宽限期",
+      "DAYS_TO_EXPIRED": "到期日",
       "DAYS_TO_EXPIRE": "到期天数",
       "EXPIRED_DAYS": "已过期天数",
       "NUM_HOSTS": "主机个数",
