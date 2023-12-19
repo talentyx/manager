@@ -2499,7 +2499,7 @@
       "QUARANTINE": "隔离",
       "WEBHOOK": "Webhook",
       "DEFAULT": "缺省",
-      "SUPPRESS-LOG": "取缔日志"
+      "SUPPRESS-LOG": "阻断日志"
     },
     "categories": {
       "THREAT": "威胁",
@@ -3082,7 +3082,7 @@
       "CONFIGURATION": "启用系统日志，导入导出Webhook和队列文件.",
       "LDAP": "配置一个LDAP/AD目录以启用用户授权.",
       "SAML": "用SAML配置单一登录.",
-      "LICENSE": "浏览账单以及管理许可证.",
+      "LICENSE": "管理和查看许可证.",
       "OPENID": "用OpenID Connect配置单一登录.",
       "ENABLED_NET_POLICY_MODE": "网络安全策略模式可以全局设置，独立于默认的组策略模式.",
       "ENABLED_NET_POLICY_MODE_GROUP": "网络安全策略将全局设置为单一模式{{name}}，并将独立于当前组进程模式执行网络策略。",
