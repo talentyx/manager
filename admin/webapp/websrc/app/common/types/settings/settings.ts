@@ -11,6 +11,7 @@ export interface LicenseInfo {
   name: string;
   email: string;
   phone: string;
+  expired: string;
   id?: string;
   id_type?: string;
   licence_type?: string;

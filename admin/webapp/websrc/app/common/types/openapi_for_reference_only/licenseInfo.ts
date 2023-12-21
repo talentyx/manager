@@ -2,6 +2,7 @@ export interface LicenseInfo {
   name: string;
   email: string;
   phone: string;
+  expired: string;
   id?: string;
   expired: string;
   id_type?: string;
