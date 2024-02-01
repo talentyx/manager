@@ -13,6 +13,26 @@
       </mat-card>
     </a>
     <a
+      [routerLink]="
+        !isConfigAuth || isNamespaceUser ? ['./'] : ['configuration']
+      "
+      class="settings__link col-md-12 col-lg-6 col-xl-4"
+      [class.disabled]="!isConfigAuth || isNamespaceUser">
+      <mat-card
+        class="settings__card"
+        [class.disabled]="!isConfigAuth || isNamespaceUser">
+        <div
+          class="settings__image--config"
+          [class.disabled]="!isConfigAuth || isNamespaceUser"></div>
+        <mat-card-title>{{
+          'sidebar.nav.CONFIGURATION' | translate
+        }}</mat-card-title>
+        <mat-card-subtitle>{{
+          'setting.description.CONFIGURATION' | translate
+        }}</mat-card-subtitle>
+      </mat-card>
+    </a>
+    <a
       [routerLink]="['users']"
       class="settings__link col-md-12 col-lg-6 col-xl-4">
       <mat-card class="settings__card">
